@@ -25,9 +25,14 @@ public class MainActivity extends AppCompatActivity {
 
         TextView tvMessage = findViewById(R.id.tvMessage);
         Button btnChangeText = findViewById(R.id.btnChangeText);
+        Button btnChangeColor = findViewById(R.id.btnChangeColor);
 
         btnChangeText.setOnClickListener(view -> {
             tvMessage.setText("Welcome to my application!");
+        });
+
+        btnChangeColor.setOnClickListener(view -> {
+            tvMessage.setTextColor(getResources().getColor(android.R.color.holo_blue_bright));
         });
     }
 }
