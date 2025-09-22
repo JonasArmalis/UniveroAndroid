@@ -1,6 +1,8 @@
 package com.example.univeroandroid;
 
 import android.os.Bundle;
+import android.widget.Button;
+import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -19,6 +21,13 @@ public class MainActivity extends AppCompatActivity {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
+        });
+
+        TextView tvMessage = findViewById(R.id.tvMessage);
+        Button btnChangeText = findViewById(R.id.btnChangeText);
+
+        btnChangeText.setOnClickListener(view -> {
+            tvMessage.setText("Welcome to my application!");
         });
     }
 }
