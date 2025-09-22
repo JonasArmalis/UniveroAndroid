@@ -44,6 +44,5 @@ public class MainActivity extends AppCompatActivity {
                         ContextCompat.getColor(this, android.R.color.holo_green_light)
                 )
         );
-        // Comment for revert
     }
 }
